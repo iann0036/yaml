@@ -1,0 +1,6 @@
+export const EMPTY_LINE = 'EMPTY_LINE'
+export const COMMENT = 'COMMENT'
+export const DIRECTIVE = 'DIRECTIVE'
+export const DOCUMENT = 'DOCUMENT'
+export const DOC_START = 'DOC_START'
+export const DOC_END = 'DOC_END'
