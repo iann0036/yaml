@@ -209,10 +209,12 @@ export class Collection extends Node {
       context: { src },
       items,
       range,
-      value
+      value,
+      overrideStartStr
     } = this
     if (value != null) return value
     let str = src.slice(range.start, items[0].range.start) + String(items[0])
+    if (overrideStartStr !== undefined) str = overrideStartStr + String(items[0])
     for (let i = 1; i < items.length; ++i) {
       const item = items[i]
       const { atLineStart, indent } = item.context
