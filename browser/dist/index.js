@@ -1,5 +1,5 @@
 import { d as defaultTagPrefix, _ as _typeof, a as _createClass, b as _classCallCheck, c as _defineProperty, e as _slicedToArray, f as _createForOfIteratorHelper, Y as YAMLSyntaxError, T as Type, g as YAMLWarning, h as YAMLSemanticError, i as YAMLError } from './PlainValue-3b27f0e5.js';
-import { D as Document$1, p as parse$1 } from './parse-bdd72870.js';
+import { D as Document$1, p as parse$1 } from './parse-66719f80.js';
 import { b as binaryOptions, a as boolOptions, i as intOptions, n as nullOptions, s as strOptions, N as Node, P as Pair, S as Scalar, c as stringifyString, A as Alias, Y as YAMLSeq, d as YAMLMap, M as Merge, C as Collection, r as resolveNode, e as createNode, f as isEmptyPath, g as collectionFromPath, t as toJS, h as addComment } from './resolveSeq-cb6cb094.js';
 import { S as Schema } from './Schema-78f588ee.js';
 
