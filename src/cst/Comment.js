@@ -21,4 +21,17 @@ export class Comment extends Node {
     trace: this.type, this.range, this.comment
     return offset
   }
+
+  toString() {
+    const {
+      context: { src, atLineStart, indent },
+      range,
+      value
+    } = this
+    if (value != null) return value
+    let str = ''
+    if (atLineStart) for (let i = 0; i < indent; ++i) str += ' '
+    str += src.slice(range.start, range.end)
+    return Node.addStringTerminator(src, range.end, str)
+  }
 }
